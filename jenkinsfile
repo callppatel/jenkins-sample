@@ -1,0 +1,10 @@
+pipeline {
+    agent any
+    stages {
+        stage('Print Parameter from API') {
+            steps {
+                echo "MY_VAR: ${params.MY_VAR}"
+            }
+        }
+    }
+}
